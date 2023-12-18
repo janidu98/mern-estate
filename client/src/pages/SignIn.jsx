@@ -31,7 +31,7 @@ const SignIn = () => {
 
       const res = await fetch('/api/auth/signin', config);
       const data = await res.json();
-
+      console.log(data);
       if(data.success === false) {
         dispatch(signFailure(data.message));
         return;
