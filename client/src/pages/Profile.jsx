@@ -156,7 +156,10 @@ const Profile = () => {
         <button disabled={loading} className='bg-slate-700 rounded-lg p-3 uppercase text-white hover:opacity-95 disabled:opacity-80'>
           {loading ? 'Loading...' : 'update'}
         </button>
-        
+
+        <Link to='/create-listing' className='bg-green-700 p-3 uppercase rounded-lg text-center text-white hover:opacity-95'>
+          Create Listing
+        </Link>
       </form>
 
       <div className='flex justify-between mt-5'>
