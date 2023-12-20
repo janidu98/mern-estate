@@ -242,7 +242,7 @@ const CreateListing = () => {
                 required 
                 className='p-3 border border-gray-300 rounded-lg'
                 onChange={handleChange}
-                checked={formData.bedrooms}
+                value={formData.bedrooms}
               />
               <span>Beds</span>
             </div>
@@ -255,7 +255,7 @@ const CreateListing = () => {
                 required 
                 className='p-3 border border-gray-300 rounded-lg'
                 onChange={handleChange}
-                checked={formData.bathrooms}
+                value={formData.bathrooms}
               />
               <span>Baths</span>
             </div>
@@ -268,28 +268,28 @@ const CreateListing = () => {
                 required 
                 className='p-3 border border-gray-300 rounded-lg'
                 onChange={handleChange}
-                checked={formData.regularPrice}
+                value={formData.regularPrice}
               />
               <div className='flex flex-col items-center'>
                 <p>Regular price</p>
-                <span className='text-xs'>($ / Month)</span>
+                <span className='text-xs'>($ / month)</span>
               </div>
             </div>
             {formData.offer &&
               <div className='flex items-center gap-2'>
                 <input 
                   type="number" 
-                  id='discountedPrice' 
+                  id='discountPrice' 
                   min='0' 
                   max='1000000' 
                   required 
                   className='p-3 border border-gray-300 rounded-lg'
                   onChange={handleChange}
-                  checked={formData.discountPrice}
+                  value={formData.discountPrice}
                 />
                 <div className='flex flex-col items-center'>
                   <p>Discounted price</p>
-                  <span className='text-xs'>($ / Month)</span>
+                  <span className='text-xs'>($ / month)</span>
                 </div>
               </div>
             }
